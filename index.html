@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdPulse — Paid Ads Performance Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">AdPulse</span>
+      </div>
+      <div class="header-meta">
+        <span class="report-period">Q2 2026 · May 1 – Jun 1</span>
+        <button class="export-btn">Export PDF</button>
+      </div>
+    </div>
+    <div class="header-ticker">
+      <div class="ticker-track">
+        <span>ROAS ↑ 4.2x &nbsp;·&nbsp; CTR ↑ 3.8% &nbsp;·&nbsp; CPC ↓ $0.82 &nbsp;·&nbsp; Impressions 2.4M &nbsp;·&nbsp; Conversions 8,412 &nbsp;·&nbsp; Spend $68,400 &nbsp;·&nbsp;</span>
+        <span>ROAS ↑ 4.2x &nbsp;·&nbsp; CTR ↑ 3.8% &nbsp;·&nbsp; CPC ↓ $0.82 &nbsp;·&nbsp; Impressions 2.4M &nbsp;·&nbsp; Conversions 8,412 &nbsp;·&nbsp; Spend $68,400 &nbsp;·&nbsp;</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- HERO KPI STRIP -->
+    <section class="kpi-strip" aria-label="Key Performance Indicators">
+      <div class="kpi-card" style="--i:0">
+        <div class="kpi-label">Total Spend</div>
+        <div class="kpi-value">$68,400</div>
+        <div class="kpi-delta negative">▲ 12% vs last period</div>
+      </div>
+      <div class="kpi-card" style="--i:1">
+        <div class="kpi-label">Revenue</div>
+        <div class="kpi-value">$287,280</div>
+        <div class="kpi-delta positive">▲ 31% vs last period</div>
+      </div>
+      <div class="kpi-card highlight" style="--i:2">
+        <div class="kpi-label">ROAS</div>
+        <div class="kpi-value">4.2x</div>
+        <div class="kpi-delta positive">▲ 0.6x vs last period</div>
+      </div>
+      <div class="kpi-card" style="--i:3">
+        <div class="kpi-label">Conversions</div>
+        <div class="kpi-value">8,412</div>
+        <div class="kpi-delta positive">▲ 18% vs last period</div>
+      </div>
+      <div class="kpi-card" style="--i:4">
+        <div class="kpi-label">Avg. CPC</div>
+        <div class="kpi-value">$0.82</div>
+        <div class="kpi-delta positive">▼ 9% vs last period</div>
+      </div>
+      <div class="kpi-card" style="--i:5">
+        <div class="kpi-label">CTR</div>
+        <div class="kpi-value">3.8%</div>
+        <div class="kpi-delta positive">▲ 0.4pp vs last period</div>
+      </div>
+    </section>
+
+    <!-- TWO-COL: CHANNEL BREAKDOWN + SPEND DONUT -->
+    <section class="grid-two">
+
+      <!-- Channel Table -->
+      <div class="panel" id="channels">
+        <div class="panel-header">
+          <h2 class="panel-title">Channel Breakdown</h2>
+          <span class="panel-badge">6 channels</span>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Channel</th>
+              <th>Spend</th>
+              <th>Revenue</th>
+              <th>ROAS</th>
+              <th>Conv.</th>
+              <th>CTR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-highlight">
+              <td><span class="channel-dot" style="--c:#f0ff4b"></span>Google Search</td>
+              <td>$28,200</td>
+              <td>$134,352</td>
+              <td><span class="roas-pill good">4.8x</span></td>
+              <td>3,820</td>
+              <td>5.2%</td>
+            </tr>
+            <tr>
+              <td><span class="channel-dot" style="--c:#ff6b35"></span>Meta Ads</td>
+              <td>$18,400</td>
+              <td>$79,120</td>
+              <td><span class="roas-pill good">4.3x</span></td>
+              <td>2,614</td>
+              <td>3.9%</td>
+            </tr>
+            <tr>
+              <td><span class="channel-dot" style="--c:#4fc3f7"></span>YouTube</td>
+              <td>$9,600</td>
+              <td>$36,480</td>
+              <td><span class="roas-pill ok">3.8x</span></td>
+              <td>1,104</td>
+              <td>2.1%</td>
+            </tr>
+            <tr>
+              <td><span class="channel-dot" style="--c:#b39ddb"></span>LinkedIn</td>
+              <td>$7,200</td>
+              <td>$24,480</td>
+              <td><span class="roas-pill ok">3.4x</span></td>
+              <td>582</td>
+              <td>1.8%</td>
+            </tr>
+            <tr>
+              <td><span class="channel-dot" style="--c:#80cbc4"></span>TikTok</td>
+              <td>$3,400</td>
+              <td>$9,520</td>
+              <td><span class="roas-pill warn">2.8x</span></td>
+              <td>218</td>
+              <td>4.4%</td>
+            </tr>
+            <tr>
+              <td><span class="channel-dot" style="--c:#ef9a9a"></span>Display</td>
+              <td>$1,600</td>
+              <td>$3,328</td>
+              <td><span class="roas-pill warn">2.1x</span></td>
+              <td>74</td>
+              <td>0.6%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Spend Donut -->
+      <div class="panel" id="spend-split">
+        <div class="panel-header">
+          <h2 class="panel-title">Spend Distribution</h2>
+          <span class="panel-badge">$68,400 total</span>
+        </div>
+        <div class="donut-wrap">
+          <svg class="donut-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Google 41% -->
+            <circle class="donut-ring" cx="100" cy="100" r="70" />
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#f0ff4b"
+              stroke-dasharray="179.9 439.8"
+              stroke-dashoffset="0" />
+            <!-- Meta 27% -->
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#ff6b35"
+              stroke-dasharray="118.7 501"
+              stroke-dashoffset="-179.9" />
+            <!-- YouTube 14% -->
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#4fc3f7"
+              stroke-dasharray="61.6 558.1"
+              stroke-dashoffset="-298.6" />
+            <!-- LinkedIn 11% -->
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#b39ddb"
+              stroke-dasharray="48.4 571.3"
+              stroke-dashoffset="-360.2" />
+            <!-- TikTok 5% -->
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#80cbc4"
+              stroke-dasharray="22 597.7"
+              stroke-dashoffset="-408.6" />
+            <!-- Display 2% -->
+            <circle class="donut-seg" cx="100" cy="100" r="70"
+              stroke="#ef9a9a"
+              stroke-dasharray="8.8 610.9"
+              stroke-dashoffset="-430.6" />
+            <text x="100" y="95" class="donut-center-label">SPEND</text>
+            <text x="100" y="115" class="donut-center-val">$68.4K</text>
+          </svg>
+          <div class="donut-legend">
+            <div class="legend-item"><span class="leg-dot" style="background:#f0ff4b"></span><span>Google Search</span><strong>41%</strong></div>
+            <div class="legend-item"><span class="leg-dot" style="background:#ff6b35"></span><span>Meta Ads</span><strong>27%</strong></div>
+            <div class="legend-item"><span class="leg-dot" style="background:#4fc3f7"></span><span>YouTube</span><strong>14%</strong></div>
+            <div class="legend-item"><span class="leg-dot" style="background:#b39ddb"></span><span>LinkedIn</span><strong>11%</strong></div>
+            <div class="legend-item"><span class="leg-dot" style="background:#80cbc4"></span><span>TikTok</span><strong>5%</strong></div>
+            <div class="legend-item"><span class="leg-dot" style="background:#ef9a9a"></span><span>Display</span><strong>2%</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE TREND CHART (CSS bar chart) -->
+    <section class="panel full-width" id="trend">
+      <div class="panel-header">
+        <h2 class="panel-title">Weekly Performance Trend</h2>
+        <div class="legend-inline">
+          <span class="li-dot" style="background:var(--accent)"></span> Revenue
+          <span class="li-dot" style="background:#ff6b35; margin-left:1rem"></span> Spend
+        </div>
+      </div>
+      <div class="bar-chart" aria-label="Weekly revenue and spend bar chart">
+        <div class="bar-group" style="--rev:62; --spd:24">
+          <div class="bar-pair">
+            <div class="bar rev" style="height:calc(var(--rev) * 2.4px)" title="Revenue: $62K"></div>
+            <div class="bar spd" style="height:calc(var(--spd) * 2.4px)" title="Spend: $24K"></div>
+          </div>
+          <div class="bar-label">Wk 1</div>
+        </div>
+        <div class="bar-group" style="--rev:54; --spd:19">
+          <div class="bar-pair">
+            <div class="bar rev" style="height:calc(var(--rev) * 2.4px)"></div>
+            <div class="bar spd" style="height:calc(var(--spd) * 2.4px)"></div>
+          </div>
+          <div class="bar-label">Wk 2</div>
+        </div>
+        <div class="bar-group" style="--rev:78; --spd:22">
+          <div class="bar-pair">
+            <div class="bar rev" style="height:calc(var(--rev) * 2.4px)"></div>
+            <div class="bar spd" style="height:calc(var(--spd) * 2.4px)"></div>
+          </div>
+          <div class="bar-label">Wk 3</div>
+        </div>
+        <div class="bar-group" style="--rev:93; --spd:26">
+          <div class="bar-pair">
+            <div class="bar rev" style="height:calc(var(--rev) * 2.4px)"></div>
+            <div class="bar spd" style="height:calc(var(--spd) * 2.4px)"></div>
+          </div>
+          <div class="bar-label">Wk 4</div>
+        </div>
+      </div>
+      <div class="axis-labels">
+        <span>$0</span>
+        <span>$50K</span>
+        <span>$100K+</span>
+      </div>
+    </section>
+
+    <!-- TOP CAMPAIGNS TABLE -->
+    <section class="panel full-width" id="campaigns">
+      <div class="panel-header">
+        <h2 class="panel-title">Top Campaigns</h2>
+        <span class="panel-badge">Sorted by Revenue</span>
+      </div>
+      <table class="data-table campaigns-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Campaign Name</th>
+            <th>Channel</th>
+            <th>Impressions</th>
+            <th>Clicks</th>
+            <th>CTR</th>
+            <th>CPC</th>
+            <th>Conversions</th>
+            <th>Revenue</th>
+            <th>ROAS</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">01</td>
+            <td class="camp-name">Brand Awareness — Spring Launch</td>
+            <td><span class="ch-tag google">Google</span></td>
+            <td>612,400</td><td>31,844</td><td>5.2%</td><td>$0.71</td><td>1,820</td>
+            <td>$87,360</td>
+            <td><span class="roas-pill good">5.1x</span></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr>
+            <td class="rank">02</td>
+            <td class="camp-name">Retargeting — Cart Abandoners</td>
+            <td><span class="ch-tag meta">Meta</span></td>
+            <td>280,100</td><td>11,204</td><td>4.0%</td><td>$0.64</td><td>1,240</td>
+            <td>$49,600</td>
+            <td><span class="roas-pill good">4.9x</span></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr>
+            <td class="rank">03</td>
+            <td class="camp-name">Product Demo — B2B Segment</td>
+            <td><span class="ch-tag linkedin">LinkedIn</span></td>
+            <td>98,200</td><td>1,768</td><td>1.8%</td><td>$1.24</td><td>582</td>
+            <td>$24,480</td>
+            <td><span class="roas-pill ok">3.4x</span></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr>
+            <td class="rank">04</td>
+            <td class="camp-name">Video Pre-roll — Brand Story</td>
+            <td><span class="ch-tag youtube">YouTube</span></td>
+            <td>540,000</td><td>11,340</td><td>2.1%</td><td>$0.85</td><td>1,104</td>
+            <td>$36,480</td>
+            <td><span class="roas-pill ok">3.8x</span></td>
+            <td><span class="status paused">Paused</span></td>
+          </tr>
+          <tr>
+            <td class="rank">05</td>
+            <td class="camp-name">Gen Z Engagement — Summer</td>
+            <td><span class="ch-tag tiktok">TikTok</span></td>
+            <td>420,800</td><td>18,515</td><td>4.4%</td><td>$0.18</td><td>218</td>
+            <td>$9,520</td>
+            <td><span class="roas-pill warn">2.8x</span></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr>
+            <td class="rank">06</td>
+            <td class="camp-name">Programmatic Display — Broad</td>
+            <td><span class="ch-tag display">Display</span></td>
+            <td>448,500</td><td>2,691</td><td>0.6%</td><td>$0.59</td><td>74</td>
+            <td>$3,328</td>
+            <td><span class="roas-pill warn">2.1x</span></td>
+            <td><span class="status review">Review</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- INSIGHTS STRIP -->
+    <section class="insights-strip" aria-label="Recommendations">
+      <div class="insight-card insight-up">
+        <div class="insight-icon">↑</div>
+        <div>
+          <div class="insight-title">Scale Google Search</div>
+          <p>4.8x ROAS with headroom — increase budget by 20% to capture untapped search volume.</p>
+        </div>
+      </div>
+      <div class="insight-card insight-warn">
+        <div class="insight-icon">⚠</div>
+        <div>
+          <div class="insight-title">Review Display Campaign</div>
+          <p>2.1x ROAS is below threshold. A/B test new creatives or reallocate budget to Search.</p>
+        </div>
+      </div>
+      <div class="insight-card insight-up">
+        <div class="insight-icon">✦</div>
+        <div>
+          <div class="insight-title">Meta Retargeting ROI</div>
+          <p>Cart abandoner campaign driving 4.9x ROAS. Expand audience to lookalikes at $0.64 CPC.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>AdPulse Report · Q2 2026 · Generated June 1, 2026</span>
+      <span>Data refreshed every 6 hours · All figures in USD</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
